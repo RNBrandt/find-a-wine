@@ -15,8 +15,21 @@ ActiveRecord::Schema.define(version: 20160406014623) do
 
   create_table "wines", force: :cascade do |t|
     t.string   "type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "name"
+    t.float    "price_min"
+    t.float    "price_max"
+    t.float    "retail"
+    t.string   "year"
+    t.string   "varietal"
+    t.string   "vineyard"
+    t.string   "vintage"
+    t.string   "vintages"
+    t.string   "region"
+    t.integer  "highest_rating"
+    t.text     "description"
+    t.text     "description_hash"
   end
 
 end
